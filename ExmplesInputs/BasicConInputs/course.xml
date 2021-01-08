@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course name="C++">
+	<code>CO1000</code>
+	<teacher id="NN">
+		<name>Nir</name>
+	</teacher>
+	<student id="S1">
+	<PersonalInfo>
+	  <name>
+          <Fname>EMAD</Fname>
+          <Lname>EMAD</Lname>
+      </name>
+      <DOB>1990</DOB>
+      <Address>
+      <city>Leicester</city>
+      <PostCode>1111</PostCode>
+      </Address>
+      </PersonalInfo>
+      <AcademicInfo>
+		<year>2016</year>
+		<mark>40</mark>
+		<degree>BSc</degree>
+	</AcademicInfo>
+	</student>
+	<student id="S2">
+	<PersonalInfo>
+	  <name>
+         <Fname>St1</Fname>
+         <Lname>St1</Lname>
+      </name>
+      <DOB>1985</DOB>
+      <Address>
+      <city>Leicester</city>
+      <PostCode>1111</PostCode>
+      </Address>
+      </PersonalInfo>
+     <AcademicInfo>
+		<year>2014</year>
+		<mark>60</mark>
+		<degree>PhD</degree>
+	</AcademicInfo>
+	</student>
+	<student id="S3">
+	<PersonalInfo>
+	  <name>
+         <Fname>sss</Fname>
+         <Lname>sss1</Lname>
+      </name>
+      <DOB>1995</DOB>
+      <Address>
+      <city>Leicester</city>
+      <PostCode>1111</PostCode>
+      </Address>
+      </PersonalInfo>
+      <AcademicInfo>
+		<year>2016</year>
+		<mark>60</mark>
+		<degree>MSc</degree>
+	</AcademicInfo>
+	</student>
+</course>

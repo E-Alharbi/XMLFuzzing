@@ -1,0 +1,4 @@
+//student[1]/AcademicInfo[1][mark[1] < 50] 
+//student[1]/AcademicInfo[1][mark[1] >=40] 
+//student[1]/AcademicInfo[1][degree[1] !='BSc'] 
+//student[1]/AcademicInfo[1][degree[1] !='MSc']

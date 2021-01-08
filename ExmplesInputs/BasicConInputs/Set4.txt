@@ -1,0 +1,2 @@
+//student[1]/AcademicInfo[1][mark <50] 
+//student[1]/AcademicInfo[1][mark <40]

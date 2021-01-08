@@ -1,0 +1,86 @@
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="course">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="code"/>
+        <xs:element name="teacher" maxOccurs="4" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="student" maxOccurs="20" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonalInfo" maxOccurs="2" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" maxOccurs="60" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Fname" maxOccurs="2" minOccurs="0"/>
+                          <xs:element type="xs:string" name="Lname"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:short" name="DOB"/>
+                    <xs:element name="Address">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="city"/>
+                          <xs:element type="xs:short" name="PostCode"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AcademicInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element  name="year">
+ <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:enumeration value="2017"/>
+      <xs:enumeration value="2016"/>
+      <xs:enumeration value="2015"/>
+       <xs:enumeration value="2014"/>
+      <xs:enumeration value="2013"/>
+      <xs:enumeration value="2012"/>
+       <xs:enumeration value="2011"/>
+      <xs:enumeration value="2010"/>
+      <xs:enumeration value="2009"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+                    <xs:element  name="mark" maxOccurs="1" minOccurs="0">
+                    <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+                   <xs:element name="degree">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BSc"/>
+      <xs:enumeration value="MSc"/>
+      <xs:enumeration value="PhD"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="name"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

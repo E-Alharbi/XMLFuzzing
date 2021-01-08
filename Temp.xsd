@@ -1,0 +1,17 @@
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="B"/>
+        <xs:element name="C">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="D"/>
+               <xs:element type="xs:string" name="E"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
