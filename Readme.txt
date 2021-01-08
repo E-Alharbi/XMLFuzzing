@@ -3,8 +3,8 @@ This project is implemented by Emad Alharbi and supervised by Dr Nir Piterman. I
 * This tool is a fuzzing tool to change an XML document based on given XPath expressions.
 
 
-What you need to run the tool?
-* The inputs for the tool are, an XML document, a set of XPath expressions and XSD document.
+What do you need to run the tool?
+* The tool's inputs are an XML document, a set of XPath expressions and XSD document.
 
 How to run the tool?
 The main class to run the tool is xfuzz.xml.builder.tester. You can set your inputs in this class.
@@ -12,11 +12,11 @@ The main class to run the tool is xfuzz.xml.builder.tester. You can set your inp
 Are there any examples?
  The package xfuzz.examples has an example. The inputs files for this example are located in /ExamplesInputs
  
-Where I can find the tool's output?
-In output folder. 
+Where can I find the tool's output?
+The tool will create a folder called "Output". 
 
 What is the tool's report?
-It is a report shows details about the XSD parser results, unsat formulas, combiner results and reasons for impossible test cases.  
+A report shows details about the XSD parser results, unsat formulas, combiner results and reasons for impossible test cases.  
 
 
 Our tool packages:
@@ -34,4 +34,4 @@ org.translet.builder
 org.translet.helper
 org.translet.processor
 org.translet.processor.dom
-org.translet.rules      
+org.translet.rules    
